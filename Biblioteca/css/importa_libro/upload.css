@@ -1,0 +1,80 @@
+.custum-file-upload {
+  background-color: gray;
+  height: 150px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed rgb(0, 0, 0);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
+}
+
+.custum-file-upload .icon {
+  background-color: gray;
+  display:inline;
+  color:white;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  background-color: gray;
+  height: 90px;
+  fill: #b4b4b4;
+}
+
+.custum-file-upload .text {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #b4b4b4;
+}
+
+.custum-file-upload .text span {
+  background-color: gray;
+
+  font-weight: 400;
+  color: #b4b4b4;
+}
+
+.custum-file-upload input {
+  background-color: gray;
+
+  display: none;
+}
+
+section.add-book form input[type="file"] {
+  display: none;
+}
+
+section.add-book form .custom-file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px dashed #cccccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+section.add-book form .custom-file-upload span {
+  font-size: 16px;
+}
+
+section.add-book form #preview img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}

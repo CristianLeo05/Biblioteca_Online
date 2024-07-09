@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- Definizione dei metadati -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/accedi-registrati/registrati.css">
+    <!-- Meta tag per la visualizzazione su dispositivi mobili -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione - Biblioteca Online</title>
+</head>
+
+<body>
+    <header>
+        <h1>Biblioteca Online</h1>
+        <br><br>
+        <!-- Barra di navigazione -->
+        <nav>
+            <ul>
+                <!-- Link alla homepage, alla pagina di accesso e alla pagina di registrazione -->
+                <li class="menu"><a href="index.php">Home</a></li>
+                <li class="menu"><a href="login.html">Accedi</a></li>
+                <li class="menu"><a href="register.html">Registrati</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Sezione di registrazione -->
+        <section class="register">
+            <h2>Registrati</h2>
+            <!-- Form di registrazione -->
+            <form action="../php/register.php" method="post">
+                <!-- Campo per l'inserimento del nome -->
+                <label for="first_name">Nome:</label>
+                <input type="text" id="first_name" name="nome" required><br><br>
+                <!-- Campo per l'inserimento del cognome -->
+                <label for="last_name">Cognome:</label>
+                <input type="text" id="last_name" name="cognome" required><br><br>
+                <!-- Campo per l'inserimento dell'email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <!-- Campo per l'inserimento del nuovo username -->
+                <label for="new_username">Nuovo Username:</label>
+                <input type="text" id="new_username" name="username" required><br><br>
+                <!-- Campo per l'inserimento della nuova password -->
+                <label for="new_password">Nuova Password:</label>
+                <input type="password" id="new_password" name="password" required><br><br>
+                <!-- Pulsante di invio per la registrazione -->
+                <input type="submit" value="Registrati">
+            </form>
+            <!-- Link per l'accesso -->
+            <p>Hai già un account? <a href="login.html">Accedi qui</a>.</p>
+        </section>
+    </main>
+</body>
+
+</html>

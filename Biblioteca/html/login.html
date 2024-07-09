@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- Definizione dei metadati -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titolo della pagina -->
+    <title>Accedi - Biblioteca Online</title>
+    <link rel="stylesheet" href="../css/accedi-registrati/accedi.css">
+</head>
+
+<body>
+    <header>
+        <br>
+        <h1>Biblioteca Online</h1>
+        <br><br>
+        <!-- Barra di navigazione -->
+        <nav>
+            <ul>
+                <!-- Link alla homepage, alla pagina di accesso e alla pagina di registrazione -->
+                <li><a href="index.php">Home</a></li>
+                <li><a href="login.html">Accedi</a></li>
+                <li><a href="register.html">Registrati</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sezione di accesso -->
+        <section class="login">
+            <h2>Accedi</h2>
+            <!-- Form di accesso -->
+            <form action="../php/login.php" method="post">
+                <!-- Campo per l'inserimento dell'email o dell'username -->
+                <label for="username">Email o Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <!-- Campo per l'inserimento della password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <!-- Pulsante di invio per accedere -->
+                <input type="submit" value="Accedi">
+            </form>
+            <!-- Link per la registrazione -->
+            <p>Non hai ancora un account? <a href="register.html">Registrati qui</a>.</p>
+        </section>
+    </main>
+
+</body>
+
+</html>

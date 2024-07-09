@@ -1,0 +1,49 @@
+CREATE TABLE utenti(
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    tipo-utente VARCHAR(30) NOT NULL DEFAULT 'UTENTE',
+    nome VARCHAR(20),
+    cognome VARCHAR(20),
+    email VARCHAR(30),
+    username VARCHAR(20),
+    password VARCHAR(65)
+)
+
+INSERT INTO utenti (nome, cognome, email, username, password)
+VALUES
+('$nome' , '$cogmome' , '$email' , '$username' , '$password');
+
+
+CREATE TABLE Libri (
+    id INT PRIMARY KEY NOT NULL  AUTO_INCREMENT,
+    titolo VARCHAR(50),
+    autore VARCHAR(50),
+    genere VARCHAR(20),
+    descrizione TEXT,
+    anno_pubblicazione DATE,
+    lingua VARCHAR(50),
+    stato_libro VARCHAR(20),
+    percorso_immagine VARCHAR(100)
+);
+
+
+
+insert into Libri (id, titolo, autore, genere, descrizione, anno_pubblicazione, lingua, quantita_disponibile, percorso_immagine)
+values
+(10, 'Il Piccolo Principe', 'Antoine de Saint-Exupéry', 'fantasy', 'Un pilota d'aerei in avaria nel mezzo del Sahara, un piccolo principe piombato sulla Terra da un minuscolo asteroide per sfuggire alla solitudine. E così che inizia una delle favole senza età più semplici e piene di poesia che siano mai state scritte: una storia di incontri bizzarri e di struggente malinconia, di amicizia e di amore che parla al cuore di tutti noi. Un grande classico per l'infanzia amato anche dagli adulti. Con gli acquerelli dell'autore.', '2022-04-15', 'Italiano', 77, '../copertine/fantasy/Il_Piccolo_Principe');
+
+
+CREATE TABLE prenotazioni (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    libro_id INT NOT NULL,
+    utente_id INT NOT NULL,
+    data_prenotazione DATE NOT NULL,
+    data_restituzione DATE,
+    FOREIGN KEY (libro_id) REFERENCES Libri(id),
+    FOREIGN KEY (utente_id) REFERENCES utenti(id)
+);
+
+
+SELECT prenotazioni.id, Libri.titolo, utenti.username, prenotazioni.data_prenotazione, prenotazioni.data_restituzione, Libri.stato_libro 
+            FROM prenotazioni 
+            JOIN Libri ON prenotazioni.libro_id = Libri.id 
+            JOIN utenti ON prenotazioni.utente_id = utenti.id;

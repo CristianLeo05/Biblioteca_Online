@@ -1,0 +1,187 @@
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: rgb(16, 16, 16);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #b4b4b4;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+nav{
+    position: relative; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items:baseline;
+    overflow: hidden; /* Necessario per contenere il div flottante */
+    justify-content: space-between; /* Questo distribuisce lo spazio tra gli elementi */    
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.menu{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+.menu:hover {
+    text-decoration: underline;
+}
+
+.userlink{
+    margin-left: auto;
+    color: #b4b4b4;
+    text-decoration: none;
+}
+
+.userlink a{
+    margin-left: auto;
+    color: #b4b4b4;
+    text-decoration: none;
+}
+
+.userlink a:hover{
+    margin-left: auto;
+    color: #b4b4b4;
+    text-decoration: underline;
+}
+
+
+nav ul div {
+    color: #b4b4b4;
+    text-decoration: none;
+}
+
+header {
+    background-image: url('../../Img_Dir/Biblioteca_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #171717;
+    background-repeat: no-repeat;
+    color: #b4b4b4;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h2 {
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Georgia', serif; /* Font per il titolo principale */
+}
+
+
+h3 {
+    font-family: 'Verdana', sans-serif; /* Font per i titoli delle colonne */
+}
+
+#genere {
+    color: #b4b4b4;
+}
+
+p {
+    font-family: 'Times New Roman', serif; /* Font per i paragrafi */
+}
+
+p a {
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+p a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.userlink {
+    text-align: right;
+    float: right; /* Sposta il div alla fine del rigo */
+    padding: 10px;
+}
+
+/* Scroll Container */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.book-category {
+    color: #b4b4b4;
+    margin: 20px 10px;
+    background-color: #2f2f2f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-category h3 {
+    color: #b4b4b4;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.book-cover {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.book-cover img {
+    max-width: 150px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.book-cover:hover {
+    transform: scale(1.1);
+}
+
+
+
+footer p {
+    margin: 0;
+}
+
+.colonna {
+    width: 20%; /* Imposta la larghezza della colonna */
+    display: inline-block; /* sMostra le colonne una accanto all'altra */
+    vertical-align: top; /* Allinea il contenuto in alto */
+    margin-right: 10%; /* Margine destro per separare le colonne */
+    padding: 20px; /* Padding interno */
+    border: 1px solid black; /* Bordo nero */
+    background-color: rgb(25, 24, 24); /* Colore di sfondo leggermente grigio */
+    border-radius: 10px; /* Bordi arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transizione per hover */
+}
+.colonna:hover {
+    transform: translateY(0px); /* Solleva leggermente la colonna */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata */
+}
+.presentazione {
+    margin-top: 20px; /* Margine superiore per separare dalla testa */
+    display: flex; /* flexbox per un layout più moderno */
+    justify-content: space-around; /* Spazio intorno alle colonne */
+}

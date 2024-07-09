@@ -1,0 +1,101 @@
+body {
+    color: #b4b4b4;
+    background-color: #212121;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #171717;
+    color: #b4b4b4;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-right: white;
+    border-width: 20px;    
+}
+
+nav ul li {
+    margin: 0 15px;
+    
+}
+
+header nav ul li a {
+    color: #b4b4b4;
+    text-decoration: none;
+    
+}
+.userlink {
+    margin-left: auto;
+}
+
+nav ul li a:hover { 
+    text-decoration: underline;
+}
+
+
+nav ul div a:hover {
+    text-decoration: underline;
+}
+
+#prenota-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#prenota-btn:hover {
+    background-color: #0056b3;
+}
+
+#prenota-btn:active {
+    background-color: #003f7f;
+}
+
+.book-cover {
+    max-width: 500px; /* Aumenta questa dimensione a tuo piacimento */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.book-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Aggiunto per centrare il contenuto */
+}
+
+.book-container h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.book-container p {
+    font-size: 18px;
+    color: #666;
+}
+
+.book-cover {
+    max-width: 100%; /* Rende l'immagine responsiva */
+    height: auto;
+    width: 300px; /* Imposta una larghezza maggiore */
+    margin-bottom: 20px;
+}

@@ -1,0 +1,131 @@
+/* CSS di base */
+
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #171717;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 10px 0;
+}
+
+
+
+h1 {
+    color: #b4b4b4;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+.header-container {
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+h1 {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-right: white;
+    border-width: 20px;    
+}
+
+nav ul li {
+    margin: 0 15px;
+    
+}
+
+header nav ul li a {
+    color: #b4b4b4;
+    text-decoration: none;
+}
+
+nav ul li a:hover { 
+    text-decoration: underline;
+}
+
+
+nav ul div a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 70px; /* spazio per l'header */
+}
+
+
+
+
+/* CSS della pagina di login */
+.login {
+    background-color: #483e3e91;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+.login h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.login label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.login input[type="text"],
+.login input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login input[type="submit"] {
+    background-color: #263c7e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login input[type="submit"]:hover {
+    background-color: #1e3066;
+}
+.login p {
+    margin-top: 15px;
+    color: #666;
+}
+.login p a {
+    color: #4f4caf;
+    text-decoration: none;
+}
+.login p a:hover {
+    text-decoration: underline;
+}
